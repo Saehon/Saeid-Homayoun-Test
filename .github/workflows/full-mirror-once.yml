@@ -1,0 +1,52 @@
+name: One-time full mirror from Saeid-Homayoun
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/full-mirror-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    if: github.repository == 'Saehon/Saeid-Homayoun-Test'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Checkout exact source snapshot
+        uses: actions/checkout@v4
+        with:
+          repository: Saehon/Saeid-Homayoun
+          ref: be3e7961bfaa6cf7bd06fdbb43349dae5ee4acda
+          path: _source_snapshot
+          persist-credentials: false
+
+      - name: Replace target contents with source snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          rsync -a --delete --exclude='.git/' --exclude='_source_snapshot/' _source_snapshot/ ./
+          rm -rf _source_snapshot
+
+      - name: Verify and commit mirror snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          git status --short
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Target already matches the requested source snapshot."
+          else
+            git commit -m "Mirror Saehon/Saeid-Homayoun at be3e796"
+            git push origin HEAD:main
+          fi
