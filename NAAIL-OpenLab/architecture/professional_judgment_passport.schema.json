@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NAAIL Professional Judgment Passport™ — Public Patent-Hold Metadata",
+  "description": "PATENT RIGHTS RESERVED — PATENT APPLICATION PREPARATION IN PROGRESS. The implementation-level schema has been withheld from the current public branch under the NAAIL patent-first policy. Historical Git commits remain part of the public disclosure record.",
+  "type": "object",
+  "required": ["status", "component"],
+  "properties": {
+    "status": {"const": "PATENT_HOLD_NON_ENABLING"},
+    "component": {"const": "Professional Judgment Passport™"},
+    "public_purpose": {"type": "string"}
+  },
+  "additionalProperties": false
+}

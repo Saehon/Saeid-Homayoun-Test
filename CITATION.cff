@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use or build on ECONOVA-S™, please cite Saeid Homayoun and this repository."
+title: "ECONOVA-S™ Research Co-Scientist: Evidence-Grounded Multi-Agent Scientific Discovery for Accounting, Finance, Economics, Sustainability, and Business"
+type: software
+authors:
+  - family-names: "Homayoun"
+    given-names: "Saeid"
+    orcid: "https://orcid.org/0000-0002-2536-0446"
+version: "0.2.0"
+date-released: "2026-09-14"
+repository-code: "https://github.com/Saehon/Saeid-Homayoun"
+url: "https://github.com/Saehon/Saeid-Homayoun"
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Homayoun"
+      given-names: "Saeid"
+      orcid: "https://orcid.org/0000-0002-2536-0446"
+  title: "ECONOVA-S™ Research Co-Scientist: Evidence-Grounded Multi-Agent Scientific Discovery for Accounting, Finance, Economics, Sustainability, and Business"
+  version: "0.2.0"
+  date-released: "2026-09-14"
+  repository-code: "https://github.com/Saehon/Saeid-Homayoun"
+abstract: >-
+  ECONOVA-S™ Research Co-Scientist is an evidence-grounded, governed multi-agent scientific-discovery platform for accounting, auditing, finance, economics, sustainability, data economy, and business research. It integrates hypothesis generation and critique, ERA-style empirical conversion, AlphaEvolve-inspired model and specification search, AlphaFold-inspired latent-structure reasoning, computational discovery, AI-to-AI adversarial review, falsification, replication, Chain-of-Evidence, DAG governance, Evidence Passports, and an explicit Human Gate before scientific claims.
+keywords:
+  - artificial intelligence
+  - accounting
+  - auditing
+  - economics
+  - finance
+  - sustainability
+  - data economy
+  - scientific discovery
+  - multi-agent systems
+  - econometrics
+  - causal inference
+  - retrieval augmented generation
+  - replication
+  - research software

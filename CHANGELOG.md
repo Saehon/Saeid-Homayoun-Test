@@ -1,0 +1,108 @@
+# Changelog
+
+All notable public changes to ECONOVA-S™ are documented here.
+
+## [Unreleased]
+
+### Google/DeepMind-inspired scientific discovery protocol
+- Added `GOOGLE_INSPIRED_DISCOVERY_PROTOCOL.md` as the canonical publication-grade discovery workflow.
+- Added explicit AI Co-Scientist-style Generation → Reflection → Ranking → Evolution → Proximity → Meta-review logic.
+- Added ERA-style hypothesis-to-executable empirical conversion requirements.
+- Added AlphaEvolve-inspired search governance with frozen scientific fitness and candidate lineage.
+- Added Computational Discovery explore/exploit and evaluator-integrity requirements.
+- Added AlphaFold-inspired latent-structure reasoning rules with baseline, interpretation, stability and OOS/external validation requirements.
+- Added Science One-inspired Chain-of-Evidence completeness/correctness requirements.
+- Added CoE Audit requirements for reference verification, score/result verification, specification integrity, method-code alignment and claim-evidence alignment.
+- Added Mirendil-inspired closed-loop R&D containment rules; self-improvement cannot rewrite scientific governance.
+- Added `discovery/study_manifest.schema.json` for machine-readable study governance.
+- Added `discovery/sample_study_manifest.json` for the flagship pre-discovery study state.
+- Added `discovery/validate_study_manifest.py` to block scientific-discovery claims when mandatory gates are incomplete.
+- Added `discovery/test_discovery_manifest.py` covering Human Gate bypass, causal-label inflation and Chain-of-Evidence artifact enforcement.
+- Added `templates/STUDY_DISCOVERY_TEMPLATE.md` with a 15-stage publication workflow.
+- Added `.github/workflows/scientific_discovery_protocol.yml` for zero-secret discovery-governance CI.
+- Upgraded `README.md`, `ARCHITECTURE.md`, `SCIENTIFIC_ASSURANCE.md`, `REPRODUCIBILITY.md`, `AI_TO_AI_AUTOMATION.md`, `PROJECT_STATUS.md`, and `ROADMAP.md` to one consistent discovery protocol.
+
+### AI-to-AI scientific automation
+- Added `AI_TO_AI_AUTOMATION.md` as the canonical multi-agent automation and governance specification.
+- Added a formal Agent → Theory/DAG → Empirical Design → Independent Replicator → Scientific Red-Team → Welfare Review → Evidence Passport → Human Gate sequence.
+- Added machine-readable handoff fields for task identity, claims, evidence, methods, assumptions, confidence, contradictions, failure status, provenance and required next action.
+- Added `automation/ai_handoff.schema.json` for the canonical handoff contract.
+- Added `automation/sample_handoff.json` as an auditable example.
+- Added `automation/validate_handoff.py` with schema, role-separation and SHA-256 integrity checks.
+- Added `automation/orchestrator.py` as a runnable seven-stage provider-neutral orchestration runtime.
+- Added chained parent/content hashes and a final run hash for tamper-evident provenance.
+- Added explicit independence classification (`role_independent_only` vs `role_and_tool_independent`).
+- Added blocking scientific risk flags and downstream failure containment.
+- Added `automation/test_orchestrator.py` covering valid chains, hash continuity and replication-failure stop behavior.
+- Added `automation/RELIABILITY_STANDARD.md` with least-privilege, observability, fault-containment and live-model promotion requirements.
+- Added `automation/README.md` as the developer guide for attaching replaceable live model adapters.
+- Upgraded `.github/workflows/ai_to_ai_contract.yml` to compile, test, execute the deterministic orchestration, enforce safety invariants and upload an auditable chain artifact.
+- Added the public rules `agent_consensus != scientific_truth`, `human_gate_required = true`, and `discovery_claim_allowed = false`.
+- Elevated runnable AI-to-AI scientific automation to the root README with a GitHub-rendered architecture diagram and workflow badge.
+
+### Documentation and research-software publication layer
+- Redesigned the root `README.md` as a professional research-software landing page with explicit version semantics, quick start, flagship study, implemented capabilities, provenance policy, scientific limits and repository map.
+- Added `ARCHITECTURE.md` as the canonical public description of the two-core V2.5 architecture.
+- Added `SCIENTIFIC_ASSURANCE.md` with evidence classes, scientific gates, anti-p-hacking rules, adversarial review and Evidence Passport requirements.
+- Added `RESEARCH_SOFTWARE_CARD.md` documenting intended use, users, inputs, outputs, known limitations, independence and data governance.
+- Added `REPRODUCIBILITY.md` with provenance, chronology, environment, commit and validation requirements.
+- Added `docs/QUICKSTART.md` and synchronized the public `/docs` landing page.
+- Added explicit independence language so references to OpenAI, Microsoft, Google, DeepMind and related systems do not imply sponsorship or affiliation.
+
+### In progress
+- Execute and archive the first official FIZ→CIZ real-data workflow artifacts.
+- Complete hypothesis tournament, replication, red-team, falsification, Chain-of-Evidence and CoE Audit for the flagship study.
+- Replicate on FF3 and additional archived portfolio families.
+- Reduced-rank factor-dimension and multiplicity/FDR extensions.
+- SEC × Fama–French × Damodaran chronology-safe empirical extension.
+
+## [0.3.0-dev] — 2026-09-14
+
+### Added
+- Official public-data ingestion layer for Fama–French, Damodaran / NYU Stern and SEC EDGAR XBRL CompanyFacts.
+- SEC filing-date chronology gate and source-provenance rules.
+- Frozen first real-data study: `MNSc-FamaFrench-01`.
+- Official July 2024 FIZ-era vs July 2025 CIZ-era Fama–French archive comparison design.
+- Data Construction Sensitivity (DCS).
+- Conclusion Reversal construct.
+- HAC/Newey–West factor-premium inference.
+- CAPM, FF3 and FF5 alpha-stability analysis.
+- Six-table empirical output contract.
+- SHA-256 source archive fingerprints and Evidence Passport™.
+- Offline parser/logic tests and manual GitHub Actions real-data workflow.
+
+### Scientific status
+- Real-data reproducibility / measurement-change study under active validation.
+- `discovery_claim_allowed = false` remains enforced.
+
+## [0.2.0] — 2026-09-14
+
+### Added
+- GPT-5.6 Sol replaceable model backend.
+- Controlled evidence metadata registry and relevance-gated RAG.
+- Official Fama–French real-data adapter and verified CSV ingestion path.
+- Six-table empirical runner with fixed effects, clustered/HC3 inference and temporal OOS checks.
+- Stata `.do` export.
+- Independent scientific red-team stage.
+- Deterministic Evidence Passport™ and Human Gate.
+- Google Drive synchronized archive.
+
+### Scientific status
+- Research workbench / pre-discovery.
+- `discovery_claim_allowed = false` remains enforced.
+
+## [0.1.0] — 2026-09-14
+
+### Added
+- Initial GPT-5.6 Sol Streamlit product prototype.
+- Systems map and hypothesis tournament.
+- ERA-style empirical design.
+- Independent red-team review.
+- Deterministic governance tests.
+
+## [POC-001] — 2026-09-14
+
+### Added
+- First executable proof of concept using deterministic synthetic data.
+- Two-core architecture validation.
+- OOS specification tournament and Evidence Passport™.

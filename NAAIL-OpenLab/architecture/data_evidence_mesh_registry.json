@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "registry_id": "NAAIL-DATA-EVIDENCE-MESH-PUBLIC-PATENT-HOLD-2026.09.16",
+  "platform": "NAAIL OpenLab™ — V2026.3 Multi-Agent Digital Twin",
+  "layer": "NAAIL Data & Evidence Mesh™",
+  "status": "PATENT_HOLD_NON_ENABLING",
+  "permanent_core_count": 2,
+  "is_permanent_core": false,
+  "public_objective": "Real Data → Evidence Governance → Multi-Agent Analysis → Digital Twin Simulation → Decision → Verification → Human Approval",
+  "storage_policy": {
+    "store_large_third_party_datasets_in_github": false,
+    "store_credentials_in_repository": false,
+    "preserve_third_party_rights": true
+  },
+  "public_source_families": [
+    {"id":"SEC_EDGAR_XBRL","name":"SEC EDGAR / XBRL","status":"REFERENCE_OR_GOVERNED_CONNECTOR"},
+    {"id":"FRED_ALFRED","name":"FRED / ALFRED","status":"REFERENCE_OR_GOVERNED_CONNECTOR"},
+    {"id":"FAMA_FRENCH","name":"Fama–French Data Library","status":"REFERENCE_OR_GOVERNED_CONNECTOR"},
+    {"id":"WORLD_BANK","name":"World Bank","status":"REFERENCE_OR_GOVERNED_CONNECTOR"},
+    {"id":"OWID_CO2_ENERGY","name":"Our World in Data CO₂ / Energy","status":"REFERENCE_OR_GOVERNED_CONNECTOR"},
+    {"id":"OPENALEX","name":"OpenAlex","status":"REFERENCE_OR_GOVERNED_CONNECTOR"},
+    {"id":"OPENSANCTIONS","name":"OpenSanctions","status":"REFERENCE_OR_GOVERNED_CONNECTOR"},
+    {"id":"OPENBB_OPTIONAL","name":"OpenBB optional connectors","status":"OPTIONAL_TECHNOLOGY_REFERENCE"}
+  ],
+  "patent_hold": {
+    "enabling_connector_contracts_public": false,
+    "detailed_provenance_schema_public": false,
+    "dependency_logic_public": false,
+    "routing_algorithm_public": false,
+    "implementation_details_private_pending_filing_review": true
+  },
+  "notice": "Earlier implementation-level versions may remain in public Git history. See PUBLIC_DISCLOSURE_LOG.md."
+}
