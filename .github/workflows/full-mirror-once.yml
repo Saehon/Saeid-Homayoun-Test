@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - '.github/workflows/full-mirror-once.yml'
+      - '.mirror-trigger'
 
 permissions:
   contents: write
