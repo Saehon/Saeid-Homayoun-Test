@@ -34,7 +34,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          rsync -a --delete --exclude='.git/' --exclude='_source_snapshot/' _source_snapshot/ ./
+          rsync -a --delete --exclude='.git/' --exclude='_source_snapshot/' --exclude='.github/workflows/' _source_snapshot/ ./
           rm -rf _source_snapshot
 
       - name: Verify and commit mirror snapshot
