@@ -1,0 +1,27 @@
+name: FF-Damodaran Scientific Contract
+
+on:
+  push:
+    paths:
+      - 'studies/FF-Damodaran-Discovery-01/**'
+      - '.github/workflows/ff_damodaran_contract.yml'
+  pull_request:
+    paths:
+      - 'studies/FF-Damodaran-Discovery-01/**'
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install study dependencies
+        run: pip install -r studies/FF-Damodaran-Discovery-01/requirements-study.txt
+      - name: Run governance contract tests
+        run: python studies/FF-Damodaran-Discovery-01/tests/test_contract.py
+      - name: Validate GPT-5.6 Sol 2026 crosswalk
+        run: python studies/FF-Damodaran-Discovery-01/tests/test_gpt_crosswalk_2026.py
+      - name: Run synthetic end-to-end pipeline test
+        run: python studies/FF-Damodaran-Discovery-01/tests/test_synthetic_pipeline.py
