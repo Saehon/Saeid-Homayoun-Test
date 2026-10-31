@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ready_original",
+    "category": "valid_control",
+    "expected_blocked": false,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "ready_repeat",
+    "category": "repeatability",
+    "expected_blocked": false,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "no_independence",
+    "category": "no_independence",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "builders",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "holdout_missing",
+    "category": "holdout_missing",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": false,
+      "planned_tests": 20,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "test_coverage",
+    "category": "test_coverage",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": 13,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "critical_findings",
+    "category": "critical_findings",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 1
+    }
+  },
+  {
+    "id": "missing_provenance",
+    "category": "missing_provenance",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "no_protocol",
+    "category": "no_protocol",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "zero_tests",
+    "category": "zero_tests",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 0,
+      "completed_tests": 20,
+      "unresolved_critical_findings": 0
+    }
+  },
+  {
+    "id": "noninteger_tests",
+    "category": "noninteger_tests",
+    "expected_blocked": true,
+    "input": {
+      "evaluation_id": "SYN-FRONTIER-01",
+      "model_id": "synthetic-model",
+      "protocol_version": "0.1",
+      "assessor": "external",
+      "model_team": "builders",
+      "public_method_url": "https://example.org/protocol",
+      "evidence_id": "SYN-EVID",
+      "holdout_declared": true,
+      "planned_tests": 20,
+      "completed_tests": "20",
+      "unresolved_critical_findings": 0
+    }
+  }
+]
