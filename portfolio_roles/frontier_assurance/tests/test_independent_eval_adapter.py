@@ -21,6 +21,11 @@ class TestIndependentEval(unittest.TestCase):
         del self.gold[0]["independent_labeler_id"]
         with self.assertRaises(ValueError):
             assess(self.gold,{})
+    def test_float_gold_label_rejected(self):
+        self.gold[0]["gold_label"] = 1.0
+        with self.assertRaises(ValueError):
+            assess(self.gold,{})
+
     def test_abstentions_counted(self):
         report=assess(self.gold,{"A":[{"case_id":"SYN-01","predicted_label":1}]})
         self.assertEqual(report["comparison"]["A"]["abstentions"],1)
