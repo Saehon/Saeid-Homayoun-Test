@@ -27,7 +27,7 @@ def assess(gold_rows, prediction_sets, dev_ids=()):
     if overlap:
         raise ValueError(f"train/holdout contamination: {len(overlap)} IDs")
     for row in gold.values():
-        if row.get("gold_label") not in (0, 1) or type(row.get("gold_label")) is bool:
+        if type(row.get("gold_label")) is not int or row.get("gold_label") not in (0, 1):
             raise ValueError("gold_label must be binary integer")
         for field in ("independent_labeler_id", "label_protocol", "evidence_id"):
             if not row.get(field):
