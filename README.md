@@ -1,5 +1,17 @@
 # NAAIL OpenLab™
 
+## Engineering portfolio: inspect the working demonstrations
+
+This is an **independent education/research laboratory**. The clearest code pathways for technical reviewers are:
+
+- **[Frontier Assurance evaluation PR #16](https://github.com/Saehon/Saeid-Homayoun-Test/pull/16)** — protocol for independent labels, overlap checks, abstentions and fail-closed review.
+- **[University AI Architecture PR #17](https://github.com/Saehon/Saeid-Homayoun-Test/pull/17)** — university RAG, privacy controls, human approvals and transparent token-cost scenarios.
+- **[Cross-project hiring and evidence index (portfolio PR #197)](https://github.com/Saehon/Saeid-Homayoun/pull/197)** — researcher identity, original contributions, limitations and third-party attribution.
+
+**Validation boundary:** the two role-oriented PRs are open and not merged. Test data is synthetic. No independent frontier-model safety certification, institutional production deployment, or employer endorsement is claimed. Check the PR-specific `portfolio_roles/` tests and GitHub Actions before citing implementation or performance.
+
+---
+
 ## Next-Generation Accounting, Audit & Assurance Education Lab
 
 ### Learn with AI · Challenge AI · Verify the Evidence · Reduce the Risk · Keep Humans Accountable
