@@ -1,0 +1,202 @@
+[
+  {
+    "id": "ready_original",
+    "category": "valid_control",
+    "expected_blocked": false,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "ready_repeat",
+    "category": "repeatability",
+    "expected_blocked": false,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "privacy_unapproved",
+    "category": "privacy_unapproved",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": false,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "missing_baseline",
+    "category": "missing_baseline",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "premature_production",
+    "category": "premature_production",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": true
+    }
+  },
+  {
+    "id": "missing_dpia",
+    "category": "missing_dpia",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "unowned_research",
+    "category": "unowned_research",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "eval_incomplete",
+    "category": "eval_incomplete",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": false,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "missing_accessibility",
+    "category": "missing_accessibility",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "",
+      "human_review_owner": "professor",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  },
+  {
+    "id": "no_human_owner",
+    "category": "no_human_owner",
+    "expected_blocked": true,
+    "input": {
+      "institution_id": "SYN-UNI",
+      "use_case": "course-support sandbox",
+      "academic_owner": "lead",
+      "technical_owner": "IT",
+      "approved_data_scope": "public only",
+      "privacy_assessment_id": "SYN-DPIA",
+      "baseline_metric": "minutes",
+      "pilot_success_metric": "supported answers",
+      "accessibility_plan": "WCAG assessment",
+      "human_review_owner": "",
+      "personal_data_approved": true,
+      "evaluation_completed": true,
+      "production_deployment_requested": false
+    }
+  }
+]
