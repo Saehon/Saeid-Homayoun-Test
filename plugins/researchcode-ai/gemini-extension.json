@@ -1,0 +1,12 @@
+{
+  "name": "researchcode-ai",
+  "version": "0.1.0",
+  "description": "Open research code and data discovery, journal verification and replication audit workflows",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "researchcode-ai": {
+      "command": "python3",
+      "args": ["${extensionPath}/server.py"]
+    }
+  }
+}

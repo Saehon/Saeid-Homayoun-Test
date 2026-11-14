@@ -1,0 +1,30 @@
+{
+  "author": {
+    "name": "Saeid Homayoun",
+    "email": "sd3.homayoun@gmail.com"
+  },
+  "description": "Research replication discovery, verified journal ranking, finance and audit research skills. Public metadata only; no restricted dataset redistribution.",
+  "interface": {
+    "capabilities": [],
+    "category": "Other",
+    "defaultPrompt": null,
+    "developerName": "Saeid Homayoun",
+    "displayName": "researchcode-ai",
+    "longDescription": "Research replication discovery, verified journal ranking, finance and audit research skills. Public metadata only; no restricted dataset redistribution.",
+    "shortDescription": "Research replication discovery, verified journal ranking, finance and audit research skills. Public metadata only; no restricted dataset redistribution."
+  },
+  "keywords": [
+    "research",
+    "accounting",
+    "audit",
+    "finance",
+    "economics",
+    "management",
+    "replication"
+  ],
+  "license": "MIT",
+  "mcpServers": "./.mcp.json",
+  "name": "researchcode-ai",
+  "skills": "./skills",
+  "version": "0.1.0"
+}
