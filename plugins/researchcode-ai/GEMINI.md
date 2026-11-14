@@ -1,0 +1,2 @@
+# ResearchCode AI extension
+Use the `researchcode-ai` MCP tools for public paper metadata, candidate replication packages, ranking validation, basic reconciliations, and variance calculation. Consult `skills/` for methods. Never claim a reproduction occurred unless independent code execution and table comparisons are documented. FT50 and AJG ratings require verified, edition-specific source data. Do not access or redistribute licensed datasets or execute downloaded scripts without isolation and review.

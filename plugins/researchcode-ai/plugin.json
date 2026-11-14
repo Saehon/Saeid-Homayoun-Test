@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "sd3.homayoun@gmail.com",
+    "name": "Saeid Homayoun"
+  },
+  "description": "Research replication discovery, verified journal ranking, finance and audit research skills. Public metadata only; no restricted dataset redistribution.",
+  "keywords": [
+    "research",
+    "accounting",
+    "audit",
+    "finance",
+    "economics",
+    "management",
+    "replication"
+  ],
+  "license": "MIT",
+  "name": "researchcode-ai",
+  "version": "0.1.0"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "researchcode-ai",
+  "version": "0.1.0",
+  "description": "Research code and open-data discovery with reproducibility, finance, audit, and data skills",
+  "author": {"name":"ResearchCode AI Contributors"},
+  "license": "MIT"
+}
